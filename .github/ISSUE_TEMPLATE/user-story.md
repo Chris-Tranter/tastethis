@@ -1,11 +1,12 @@
 ---
-name: User story
-about: 'as a i can so '
+name: User stories
+about: ''
 title: ''
 labels: ''
 assignees: Chris-Tranter
 
 ---
+As a **** I can **** So that *****
 
 AC1 - 
 
