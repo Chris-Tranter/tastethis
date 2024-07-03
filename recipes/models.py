@@ -13,6 +13,12 @@ class Recipe(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     updated = models.DateTimeField(auto_now=True)
 
+class Meta:
+        ordering = ["-created"]
+
+def __str__(self):
+        return f"{self.title} especially crafted by {self.author},"
+
 
 class Recipe_comment(models.Model):
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="++")
@@ -20,3 +26,9 @@ class Recipe_comment(models.Model):
     comment = models.TextField()
     approved = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
+
+class Meta:
+        ordering = ["-recipe"]
+
+def __str__(self):
+        return f"{self.author} has written {self.comment}"
