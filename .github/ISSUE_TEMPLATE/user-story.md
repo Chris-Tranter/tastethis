@@ -1,6 +1,6 @@
 ---
 name: User stories
-about: ''
+about: 'template'
 title: ''
 labels: ''
 assignees: Chris-Tranter
