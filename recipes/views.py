@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Recipe
 
-def my_recipe(request):
-    return HttpResponse("recipes page")
+class Recipelist(generic.ListView):
+    queryset = Recipe.objects.all()
+    template_name = "recipe_list.html"
