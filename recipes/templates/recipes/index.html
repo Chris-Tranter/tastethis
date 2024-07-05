@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                {% for recipe in recipe_list %}
+                <div class="col-6">
+                    <div class="card m-5">
+                        <div>
+                            <div>
+                                <div>
+                                    <p class="h3">{{ recipe.author }} made:</p>
+                                </div>
+                            </div>
+                            <a href="#" class=""><p class="">{{ recipe.title }}</p></a>
+                            <p class="">prepares in {{ recipe.prep_time}}mins.</p>
+                            <p class="">cooks in {{ recipe.cook_time}}mins.</p>
+                        </div>
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:2 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_next %}
+            <li class=""><a href="?page={{ page_obj.next_page_number }}">Next Page</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block copyright %}
+    Chris Tranter 2024
+{% endblock copyright %}

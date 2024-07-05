@@ -4,4 +4,5 @@ from .models import Recipe
 
 class Recipelist(generic.ListView):
     queryset = Recipe.objects.filter(status=1).order_by("created")
-    template_name = "recipe_list.html"
+    template_name = "recipes/index.html"
+    paginate_by = 4
