@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+
+<div class="container-fluid">
+    <p class="">{{ recipe.title }}, a creation by {{ recipe.author }}</p>
+</div>
+
+<div class="d-block">
+    <img src="{% static 'images/food.png' %}" class="img-fluid" alt="responsive-image">
+</div>
+
+<div>
+    <p>{{ recipe.cooking_steps }}</p>
+</div>
+
+{% endblock content %}

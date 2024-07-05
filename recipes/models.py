@@ -15,9 +15,9 @@ class Recipe(models.Model):
     prep_time = models.PositiveIntegerField(default=0)
     cook_time = models.PositiveIntegerField(default=0)
     servings = models.PositiveIntegerField(default=0)
-    created = models.DateTimeField(auto_now_add=True)
+    created = models.DateField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    updated = models.DateTimeField(auto_now=True)
+    updated = models.DateField(auto_now=True)
 
 class Meta:
         ordering = ["-created"]
@@ -31,7 +31,7 @@ class Recipe_comment(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="+++")
     comment = models.TextField()
     approved = models.BooleanField(default=False)
-    created = models.DateTimeField(auto_now_add=True)
+    created = models.DateField(auto_now_add=True)
 
 class Meta:
         ordering = ["-recipe"]
