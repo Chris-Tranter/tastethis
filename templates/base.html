@@ -58,6 +58,11 @@
         </div>
     </nav>
     
+    {% if user.is_authenticated %}
+    <p class="text-start">Logged in user: {{ user }}</p>
+    {% else %}
+    <p class="text-start">You are not logged in</p>
+    {% endif %}
     {% block content %}
 
     {% endblock content %}

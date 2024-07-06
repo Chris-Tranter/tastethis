@@ -10,7 +10,7 @@
 </div>
 
 <div>
-    <p>{{ recipe.cooking_steps }}</p>
+    <p>{{ recipe.cooking_steps | safe}}</p>
 </div>
 
 {% endblock content %}
