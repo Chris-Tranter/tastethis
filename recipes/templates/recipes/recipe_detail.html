@@ -22,9 +22,9 @@
   {% if not comment.approved and comment.author == user %}
   {% elif not comment.approved %}
   {% endif %}
-
-  <div>{{ comment.author }} has commented, "{{ comment.comment }}"</div>
-  
+<div>
+{{ comment.author }} said: {{ comment.comment }}
+</div>
   {% endfor %}
 </div>
 

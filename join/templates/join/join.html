@@ -1,9 +1,25 @@
 {% extends 'base.html' %}
-{% block content %}
 {% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
 
 <div class="container-fluid">
     <img src="{% static 'images/food.png' %}" class="img-fluid" alt="responsive-image">
   </div>
 
+                <div class="container-fluid g-0">
+                  {{ join.content | safe }}
+                </div>
+
+
+<p>Join TASTE TEEZ!</p>
+<p>Are you interested in joining the team at TASTE TEEZ?
+  If so, you will be able to create your own recipes for others to read and comment on.
+  What are you waiting for? Fill out the form below! 
+</p>
+<form method="post">
+  {{ join_form | crispy }}
+  {% csrf_token %}
+  <button class="btn" type="submit">Join Us</button>
+</form>
 {% endblock content %}
