@@ -36,5 +36,3 @@ class Recipe_comment(models.Model):
 class Meta:
         ordering = ["-recipe"]
 
-def __str__(self):
-        return f"{self.author} has written {self.comment}"

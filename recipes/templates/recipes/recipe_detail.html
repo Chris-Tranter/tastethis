@@ -1,4 +1,5 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+{% block content %}
 {% load static %}
 
 <div class="container-fluid">
@@ -11,6 +12,20 @@
 
 <div>
     <p>{{ recipe.cooking_steps | safe}}</p>
+</div>
+
+<div>
+{{ recipe_comment.comment }}
+
+  {% for comment in comments %}
+
+  {% if not comment.approved and comment.author == user %}
+  {% elif not comment.approved %}
+  {% endif %}
+
+  <div>{{ comment.author }} has commented, "{{ comment.comment }}"</div>
+  
+  {% endfor %}
 </div>
 
 {% endblock content %}
