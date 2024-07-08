@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
-from .models import Recipe, Recipe_comment
+from django.contrib import messages
 from .forms import CommentForm
+from .models import Recipe, Recipe_comment
 
 class Recipelist(generic.ListView):
     queryset = Recipe.objects.filter(status=1).order_by("created")
@@ -23,4 +24,6 @@ def recipe_detail(request, slug):
             comment.author = request.user
             comment.recipe = recipe
             comment.save()
+            messages.add_message(request, messages.SUCCESS,'Thanks your comment is under approval.')
+    comment_form = CommentForm()
     return render(request,"recipes/recipe_detail.html",{"recipe": recipe, "comments":comments, "comment_form": CommentForm,})
