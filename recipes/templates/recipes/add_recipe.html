@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags%}
+
+{% if user.is_authenticated %}
+
+<div class="container-fluid g-0">
+    <p>Add Recipe</p>
+</div>
+
+<div class="container-fluid g-0">
+    <form method="POST">
+        {% csrf_token %}
+        {{ recipe_form|crispy }}
+        <button class="btn" type="submit" value="Save">Add Recipe</button>
+    </form>
+</div>
+
+{% endif %}
+
+
+{% endblock %}

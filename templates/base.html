@@ -29,7 +29,6 @@
 </head>
 
 <body class="container-fluid">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -41,17 +40,21 @@
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == add_recipe_url %}active{% endif %}" aria-current="page" href= "{% url 'add_recipe' %}">Add Recipe</a>
+                    </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'account_signup' %}">Register</a>
+                        href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == join_url %}active{%endif%}" aria-current="page" href="{% url 'join' %}">Join</a>
                     {% endif %}
-                    <li class="nav-item"><a class="nav-link {% if request.path == join_url %}active{%endif%}" aria-current="page" href="{% url 'join' %}">Join</a>
-                    </li>
+                    </li>   
                 </ul>
             </div>
         </div>
