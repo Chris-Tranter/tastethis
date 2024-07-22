@@ -40,5 +40,13 @@
         <p>To comment, you must be logged in.</p>
         {% endif %}
     </div>
+    <!-- EDIT AND DELETE BUTTONS -->
+    {% if user.is_authenticated and user.id == recipe.author.id %}
+    <span>
+        <a href="{% url 'update_recipe' recipe.id %}"><button class="btn-sm btn-success ">Edit</button></a></span>
+        <a href="{% url 'delete_recipe' recipe.id %}"><button class="btn-sm btn-success ">Delete</button></a></span>
+        
+        {% endif %}
+        <!-- END OF BUTTONS -->
 </div>
 {% endblock content %}
