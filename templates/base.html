@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
-<body class="container-fluid">
+<body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -43,6 +43,9 @@
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == add_recipe_url %}active{% endif %}" aria-current="page" href= "{% url 'add_recipe' %}">Add Recipe</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == join_url %}active{%endif%}" aria-current="page" href="{% url 'join' %}">Join</a>
+                    </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
@@ -53,6 +56,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == join_url %}active{%endif%}" aria-current="page" href="{% url 'join' %}">Join</a>
+                    </li>
                     {% endif %}
                     </li>   
                 </ul>
@@ -78,7 +82,7 @@
 
 
     <!-- Footer -->
-    <footer class="">
+    <footer class="footer">
         <p class="text-center">
             {% block copyright %}
                 Chris Tranter 2024
