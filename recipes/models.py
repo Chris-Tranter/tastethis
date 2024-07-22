@@ -1,4 +1,6 @@
 from django.db import models
+from django.urls import reverse
+from django.http import HttpResponseRedirect
 from django.contrib.auth.models import User
 
 STATUS = ((0, "not-posted"), (1, "Posted"))
@@ -18,6 +20,10 @@ class Recipe(models.Model):
     created = models.DateField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     updated = models.DateField(auto_now=True)
+    
+    def get_absolute_url(self):
+        """Sets absolute URL"""
+        return reverse('recipe_detail', args=[self.slug])
 
 class Meta:
         ordering = ["-created"]
