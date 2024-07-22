@@ -1,11 +1,18 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.http import HttpResponseRedirect
 from django.views import generic, View
 from django.contrib import messages
 from django.utils.text import slugify
 from .forms import CommentForm, RecipeForm
 from .models import Recipe, Recipe_comment
+from django.views.generic import UpdateView
+from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
+from django.views.generic import (TemplateView, CreateView, ListView, DeleteView, UpdateView)
+from django.db.models import Q
+from .forms import RecipeForm, CommentForm
+
 class Recipelist(generic.ListView):
-    queryset = Recipe.objects.filter(status=1).order_by("created")
+    queryset = Recipe.objects.filter(status=1).order_by("-created")
     template_name = "recipes/index.html"
     paginate_by = 4
 
@@ -24,6 +31,7 @@ def recipe_detail(request, slug):
             comment.author = request.user
             comment.recipe = recipe
             comment.save()
+            return HttpResponseRedirect(reverse('recipe_details', args=[slug]))
             messages.add_message(request, messages.SUCCESS,'Thanks your comment is under approval.')
     comment_form = CommentForm()
     return render(request,"recipes/recipe_detail.html",{"recipe": recipe, "comments":comments, "comment_form": CommentForm,})
@@ -47,7 +55,7 @@ class AddRecipe(View):
                                   allow_unicode=False)
             recipe.save()
             print('saved')
-            return redirect('add_recipe')
+            return redirect('home')
         else:
             print('error')
             messages.error(self.request, 'Please complete all required fields')
@@ -61,3 +69,16 @@ class AddRecipe(View):
 
             },
         )
+
+
+class UpdateRecipe(UpdateView):
+    """ Edit Recipe """
+    model = Recipe
+    template_name = 'recipes/update_recipe.html'
+    form_class = RecipeForm
+
+def delete_recipe(request, recipe_id):
+    """Deletes recipe"""
+    recipe = get_object_or_404(Recipe, id=recipe_id)
+    recipe.delete()
+    return redirect(reverse('home'))
