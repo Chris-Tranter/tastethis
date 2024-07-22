@@ -13,8 +13,8 @@
                         <div>
                             <div>
                                 {% if "placeholder" in recipe.image.url %}
-                                <img class="simage text-right" src="{% static 'images/food.png' %}"
-                                  alt="placeholder image">
+                                <a href="{% url 'recipe_detail' recipe.slug %}"><img class="simage text-right" src="{% static 'images/food.png' %}"
+                                  alt="placeholder image"></a>
                                 {% else %}
                                 <img class="simage" src=" {{ recipe.image.url }}"
                                   alt="{{ recipe.title }}">
