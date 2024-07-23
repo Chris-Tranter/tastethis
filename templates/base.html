@@ -71,11 +71,14 @@
     {% endfor %}
     </div>
     
+    <div>
     {% if user.is_authenticated %}
-    <p class="text-end userp m-2">{{ user }} is signed in.</p>
+    <p class="text-center userp">{{ user }} is signed in.</p>
     {% else %}
-    <p class="text-end userp g-0">You are not logged in</p>
+    <p class="text-center userp">You are not logged in</p>
     {% endif %}
+    </div>
+
     {% block content %}
 
     {% endblock content %}
