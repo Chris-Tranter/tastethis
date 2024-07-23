@@ -6,11 +6,11 @@
 
 {% if user.is_authenticated %}
 
-<div class="container-fluid g-0">
-    <p>Add Recipe</p>
+<div class="text-center">
+    <h2>Add Your Recipe</h2>
 </div>
 
-<div class="container-fluid g-0">
+<div class="">
     <form method="POST">
         {% csrf_token %}
         {{ recipe_form|crispy }}

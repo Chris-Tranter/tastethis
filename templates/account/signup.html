@@ -1,14 +1,16 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
 {% load crispy_forms_tags %}
 {% load i18n %}
 
 
-
-<h1>{% trans "Sign Up" %}</h1>
-
+<div class="text-center">
+<h2>Sign Up</h2>
 <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">Log In</a>.{% endblocktrans %}</p>
+
+<hr>
+<br>
 
 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
@@ -18,5 +20,5 @@
   {% endif %}
   <button type="submit">{% trans "Sign Up" %}</button>
 </form>
-
+</div>
 {% endblock content %}

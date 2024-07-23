@@ -1,18 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .navbar2 {
-    background-color: white;
+    background-color: #f1f7f8;
+    font-family: 'Michroma';
 }
 
 footer {
-    background-color: white;
+    background-color: inherit;
+    margin-top: 4vh;
 }
+
+h2 {
+    font-family: 'Michroma';
+} 
 
 a {
     text-decoration: none;
-    color: black;
+    color: #629460;
 }
 
 .listed {
     text-align: center;
+    color: #629460;
+}
+
+li {
+    margin-right: 2vw;
+}
+
+.userp {
+    color: #629460;
+}
+
+.background2 {
+    background-color: #f1f7f8;
+}
+
+.next-page {
+    margin-left: 10vw;
+    border: solid #12242b;
+}
+
+.prev-page {
+    margin-right: 10vw;
+    border: solid #12242b;
 }

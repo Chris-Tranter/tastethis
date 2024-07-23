@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
-<body class="background">
+<body class="background2">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar2">
         <div class="container-fluid">
@@ -72,9 +72,9 @@
     </div>
     
     {% if user.is_authenticated %}
-    <p class="text-start">Logged in user: {{ user }}</p>
+    <p class="text-end userp m-2">{{ user }} is signed in.</p>
     {% else %}
-    <p class="text-start">You are not logged in</p>
+    <p class="text-end userp g-0">You are not logged in</p>
     {% endif %}
     {% block content %}
 
@@ -83,11 +83,11 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p class="text-center">
+        <h3 class="text-center">
             {% block copyright %}
-                Chris Tranter 2024
+            © Chris Tranter 2024
             {% endblock copyright %}
-        </p>
+        </h3>
     </footer>
 
     <!-- Scripts -->

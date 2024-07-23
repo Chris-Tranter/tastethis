@@ -7,11 +7,17 @@
 </div>
 
 <div class="d-block">
-    <img src="{% static 'images/food.png' %}" class="img-fluid" alt="responsive-image">
+    <img src="{{ recipe.image.url }}" class="img-fluid" alt="{{ recipe.title }}">
+</div>
+
+<br><br>
+
+<div>
+    <p>ingredients:<br>{{ recipe.ingredients | safe}}</p>
 </div>
 
 <div>
-    <p>{{ recipe.cooking_steps | safe}}</p>
+    <p>cooking steps:<br>{{ recipe.cooking_steps | safe}}</p>
 </div>
 
 <div>

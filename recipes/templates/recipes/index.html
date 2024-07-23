@@ -5,12 +5,12 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12">
+        <div class="">
             <div class="row">
                 {% for recipe in recipe_list %}
                 <div class="col-6">
-                    <div class="card m-5">
-                        <div>
+                    <div class="">
+                        <div class="">
                             <div class="">
                                 {% if "placeholder" in recipe.image.url %}
                                 <a href="{% url 'recipe_detail' recipe.slug %}"><img class="img-fluid" src="{% static 'images/food.png' %}"
@@ -20,10 +20,10 @@
                                   alt="{{ recipe.title }}"></a>
                                 {% endif %}
                                 <div>
-                                    <p class="h3">{{ recipe.author }} made:</p>
+                                    <p class="h3">{{ recipe.author }} made: {{ recipe.title }}</p>
                                 </div>
                             </div>
-                            <a href="{% url 'recipe_detail' recipe.slug %}"><p>{{ recipe.title }}</p></a>
+                            <a href="{% url 'recipe_detail' recipe.slug %}"></a>
                             <p class=""><i class="fas fa-clock"></i> Prepares in {{ recipe.prep_time}}mins.</p>
                             <p class=""><i class="fas fa-clock"></i> Cooks in {{ recipe.cook_time}}mins.</p>
                         </div>
@@ -42,11 +42,11 @@
         <ul class="pagination justify-content-center">
            
             {% if page_obj.has_previous %}
-            <li class="prev-page"><a href="?page={{ page_obj.previous_page_number }}">Prev Page</a></li>
+            <li class="prev-page page-link"><a href="?page={{ page_obj.previous_page_number }}">Prev Page</a></li>
             {% endif %}
 
             {% if page_obj.has_next %}
-            <li class="next-page"><a href="?page={{ page_obj.next_page_number }}">Next Page</a></li>
+            <li class="next-page page-link"><a href="?page={{ page_obj.next_page_number }}">Next Page</a></li>
             {% endif %}
             
         </ul>
@@ -56,5 +56,5 @@
 {% endblock %}
 
 {% block copyright %}
-    Chris Tranter 2024
+© Chris Tranter 2024
 {% endblock copyright %}
