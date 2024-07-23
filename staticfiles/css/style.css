@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-p {
-    color: blue;
+.navbar2 {
+    background-color: bisque;
+}
+
+footer {
+    background-color: bisque;
+}]
+
+a {
+    text-decoration: none;
 }

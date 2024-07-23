@@ -1,21 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
 {% load crispy_forms_tags %}
 
-<div class="container-fluid">
-    <img src="{% static 'images/food.png' %}" class="img-fluid" alt="responsive-image">
-  </div>
+{% block content %}
 
-<p>Join the team at TASTE TEEZ and become an administrator!</p>
 
-<p>Why become an admin for TASTE TEEZ?
-  if you share a love for tasty dishes and want to help the team manage what content is shown and general upkeep of the site then, Fill out the form below! 
-</p>
 
 <form method="post">
+  {{ join.title }} by {{ join.image }} and {{ Join.content }}
   {{ join_form | crispy }}
   {% csrf_token %}
   <button class="btn" type="submit">Submit</button>
 </form>
-{% endblock content %}
+
+{% endblock %}

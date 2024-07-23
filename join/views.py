@@ -4,7 +4,6 @@ from django.contrib import messages
 from .models import Join
 from .forms import JoinForm
 
-
 def join_me(request):
     """
     Renders the joinpage
