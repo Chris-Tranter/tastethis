@@ -2,25 +2,20 @@
 {% block content %}
 {% load static %}
 {% load crispy_forms_tags %}
-<div class="container-fluid">
-    <p class="">{{ recipe.title }}, a creation by {{ recipe.author }}</p>
-</div>
 
+<div class="text-center">
+    <div class="">
+    <h3 class="">{{ recipe.title }}, a creation by {{ recipe.author }}</h3>
 <div class="d-block">
     <img src="{{ recipe.image.url }}" class="img-fluid" alt="{{ recipe.title }}">
-</div>
-
 <br><br>
-
 <div>
-    <p>ingredients:<br>{{ recipe.ingredients | safe}}</p>
+    <h3>ingredients:</h3><br>{{ recipe.ingredients | safe}}
 </div>
 
 <div>
-    <p>cooking steps:<br>{{ recipe.cooking_steps | safe}}</p>
+    <h3>cooking steps:</h3><br>{{ recipe.cooking_steps | safe}}
 </div>
-
-<div>
 {{ recipe_comment.comment }}
 
   {% for comment in comments %}
@@ -41,7 +36,7 @@
         <form id="commentForm" method="post">
         {{ comment_form | crispy }}
         {% csrf_token %}
-        <button type="submit" class="btn">Send</button></form></form>
+        <button type="submit" class="btn">Send</button></form>
         {% else %}
         <p>To comment, you must be logged in.</p>
         {% endif %}
@@ -54,5 +49,4 @@
         
         {% endif %}
         <!-- END OF BUTTONS -->
-</div>
 {% endblock content %}
