@@ -10,7 +10,7 @@ class Recipe(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="+")
-    ingredients = models.TextField(max_length=1600, unique=True)
+    ingredients = models.TextField(max_length=3200, unique=True)
     image = CloudinaryField('image', default='placeholder')
     #likes =
     cooking_steps = models.TextField(max_length=2400, unique=True)
