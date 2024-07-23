@@ -5,9 +5,15 @@
 {% block content %}
 
 
+<!-- 
+{% block new %}
+
+{{ join.title }}        {{ join.content | safe }}  
+                                                     why is my DTN not showing?
+{% endblock %}
+ -->
 
 <form method="post">
-  {{ join.title }} by {{ join.image }} and {{ Join.content }}
   {{ join_form | crispy }}
   {% csrf_token %}
   <button class="btn" type="submit">Submit</button>
