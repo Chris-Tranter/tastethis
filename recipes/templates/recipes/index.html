@@ -11,13 +11,13 @@
                 <div class="col-6">
                     <div class="card m-5">
                         <div>
-                            <div>
+                            <div class="">
                                 {% if "placeholder" in recipe.image.url %}
-                                <a href="{% url 'recipe_detail' recipe.slug %}"><img class="simage text-right" src="{% static 'images/food.png' %}"
+                                <a href="{% url 'recipe_detail' recipe.slug %}"><img class="recipeimg text-right" src="{% static 'images/food.png' %}"
                                   alt="placeholder image"></a>
                                 {% else %}
-                                <img class="simage" src=" {{ recipe.image.url }}"
-                                  alt="{{ recipe.title }}">
+                                <a href="{% url 'recipe_detail' recipe.slug %}"><img class="recipeimg" src=" {{ recipe.image.url }}"
+                                  alt="{{ recipe.title }}"></a>
                                 {% endif %}
                                 <div>
                                     <p class="h3">{{ recipe.author }} made:</p>
