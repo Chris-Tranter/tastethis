@@ -1,7 +1,7 @@
 ### TASTE TEEZ
 
 #### Responsive
-![responsive examples](./readmeimages/misc/responsiv.png)
+![responsive example](./readmeimages/misc/responsive.png)
 
 #### Link to Website Below
 ![live site](heroku.vo)
@@ -49,10 +49,6 @@ uploading recipes and exchanging comments. users will have full control over wha
 <img src="./readmeimages/loggedindesk/loggedindetail.png" alt="wireframe" width="75%"/>
 <img src="./readmeimages/loggedindesk/logout.png" alt="wireframe" width="75%"/>
 <img src="./readmeimages/loggedindesk/myrecipe.png" alt="wireframe" width="75%"/>
-
-
-
-
 
 #### Desktop Signed Out
 <img src="./readmeimages/loggedoutdesk/homepage.png" alt="wireframe" width="75%"/>
