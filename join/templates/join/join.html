@@ -4,28 +4,26 @@
 {% load crispy_forms_tags %}
 {% load i18n %}
 
-
-
-<!-- 
-{% block new %}
-
-{{ join.title }}        {{ join.content | safe }}  
-                                                     why is my DTN not showing?
-{% endblock %}
- -->
-
- <div class="text-center">
-  <h2>Join The Team</h2>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="text-center">
+        <h2>Join The Team</h2>
+      </div>
+      
+      <hr><br>
+      
+      <form method="post">
+        <div class= "justify-content-center">
+          {{ join_form | crispy }}
+          {% csrf_token %}
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
 
-<hr><br>
 
-<form method="post">
-  <div class= "justify-content-center">
-    {{ join_form | crispy }}
-    {% csrf_token %}
-    <button class="btn" type="submit">Submit</button>
-  </div>
-</form>
 
 {% endblock %}

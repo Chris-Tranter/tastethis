@@ -6,19 +6,27 @@
 
 {% if user.is_authenticated %}
 
-<div class="text-center">
-    <h2>Add Your Recipe</h2>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <h2>Add Your Recipe</h2>
+            </div>
+            
+            <hr><br>
+            
+            <div class="">
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ recipe_form|crispy }}
+                    <button class="btn" type="submit" value="Save">Add Recipe</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
-<hr><br>
 
-<div class="">
-    <form method="POST">
-        {% csrf_token %}
-        {{ recipe_form|crispy }}
-        <button class="btn" type="submit" value="Save">Add Recipe</button>
-    </form>
-</div>
 
 {% endif %}
 
