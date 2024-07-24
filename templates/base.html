@@ -32,36 +32,45 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar2">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class=""><i class="fas fa-utensils"> TASTE TEEZ</span></a></i>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class=""><i class="fas fa-utensils"> TASTE
+                        TEEZ</span></a></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav listed">
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == add_recipe_url %}active{% endif %}" aria-current="page" href= "{% url 'add_recipe' %}">Add Recipe</a>
+                        <a class="nav-link {% if request.path == add_recipe_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'add_recipe' %}">Add Recipe</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == my_recipes_url %}active{% endif %}" aria-current="page" href= "{% url 'my_recipes' %}">My Recipes</a>
+                        <a class="nav-link {% if request.path == my_recipes_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'my_recipes' %}">My Recipes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == join_url %}active{%endif%}" aria-current="page" href="{% url 'join' %}">Join</a>
+                        <a class="nav-link {% if request.path == join_url %}active{%endif%}" aria-current="page"
+                            href="{% url 'join' %}">Join</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-                        href="{% url 'account_signup' %}">Register</a>
+                            href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'account_login' %}">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == join_url %}active{%endif%}" aria-current="page" href="{% url 'join' %}">Join</a>
+                        <a class="nav-link {% if request.path == join_url %}active{%endif%}" aria-current="page"
+                            href="{% url 'join' %}">Join</a>
                     </li>
                     {% endif %}
-                    </li>   
+                    </li>
                 </ul>
             </div>
         </div>
@@ -71,23 +80,21 @@
     <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
         {{ message | safe }}
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    {% endfor %}
+        {% endfor %}
     </div>
-    
+
     <div>
-    {% if user.is_authenticated %}
-    <p class="text-center userp">{{ user }} is signed in.</p>
-    {% else %}
-    <p class="text-center userp">You are not logged in</p>
-    {% endif %}
+        {% if user.is_authenticated %}
+        <p class="text-center userp">{{ user }} is signed in.</p>
+        {% else %}
+        <p class="text-center userp">You are not logged in</p>
+        {% endif %}
     </div>
 
     {% block content %}
 
     {% endblock content %}
 
-
-    <!-- Footer -->
     <footer class="footer">
         <h3 class="text-center">
             {% block copyright %}
@@ -96,9 +103,8 @@
         </h3>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
     <script src="{% static 'js/script.js' %}"></script>
 </body>

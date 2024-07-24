@@ -1,9 +1,6 @@
 {% extends "base.html" %}
-
 {% block content %}
-
 {% load crispy_forms_tags%}
-
 {% if user.is_authenticated %}
 
 <div class="container">
@@ -12,9 +9,7 @@
             <div class="text-center">
                 <h2>Add Your Recipe</h2>
             </div>
-            
-            <hr><br>
-            
+              <hr><br>
             <div class="">
                 <form method="POST">
                     {% csrf_token %}
@@ -26,9 +21,5 @@
     </div>
 </div>
 
-
-
 {% endif %}
-
-
 {% endblock %}

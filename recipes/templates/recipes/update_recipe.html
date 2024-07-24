@@ -3,7 +3,7 @@
 {% load static %}
 
 {% if user.is_authenticated and user.id == recipe.author.id %}
-<!-- TITLE -->
+
 <div class="container">
    <div class="row">
       <div class="col-8 offset-2 text-center mt-5">
@@ -11,7 +11,7 @@
          <hr>
       </div>
    </div>
-   <!-- EDIT RECIPE FORM -->
+
    <div class="row">
       <div class="col mt-3 text-center">
          <form method="post" enctype="multipart/form-data">

@@ -3,7 +3,6 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-
 <div class="text-center">
     <div class="">
     <h3 class="">{{ recipe.title }}, a creation by {{ recipe.author }}</h3>
@@ -30,6 +29,7 @@
 <div>
     <h3>cooking steps:</h3><br>{{ recipe.cooking_steps | safe}}
 </div>
+
 {{ recipe_comment.comment }}
 
   {% for comment in comments %}
@@ -55,12 +55,12 @@
         <p>To comment, you must be logged in.</p>
         {% endif %}
     </div>
-    <!-- EDIT AND DELETE BUTTONS -->
+
     {% if user.is_authenticated and user.id == recipe.author.id %}
     <span>
         <a href="{% url 'update_recipe' recipe.id %}"><button class="btn-sm btn-success ">Edit</button></a></span>
         <a href="{% url 'delete_recipe' recipe.id %}"><button class="btn-sm btn-success ">Delete</button></a></span>
         
         {% endif %}
-        <!-- END OF BUTTONS -->
+
 {% endblock content %}
