@@ -18,6 +18,12 @@
 
 <br><br>
 <div>
+  <p><i class="fas fa-clock"></i> Prepares in {{ recipe.prep_time}}mins. <i class="fas fa-clock"></i> Cooks in {{ recipe.cook_time}}mins.</p>
+  <p><i class="far fa-snowflake"></i> Freezable? {{ recipe.freezable }}</p>
+  <p><i class="fas fa-pizza-slice"></i> Serves: {{ recipe.servings }}</p>
+</div>
+
+<div>
     <h3>ingredients:</h3><br>{{ recipe.ingredients | safe}}
 </div>
 

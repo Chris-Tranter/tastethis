@@ -12,7 +12,6 @@ class Recipe(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="+")
     ingredients = models.TextField(max_length=3200, unique=True)
     image = CloudinaryField('image', default='placeholder')
-    #likes =
     cooking_steps = models.TextField(max_length=2400, unique=True)
     freezable = models.BooleanField(default=False)
     prep_time = models.PositiveIntegerField(default=0)
