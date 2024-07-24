@@ -32,33 +32,33 @@ uploading recipes and exchanging comments. users will have full control over wha
 - a likes counter and favourite a recipe
 
 #### Kanban Board
-<img src="./readmeimages/misc/kanbanboard.png" alt="kanban" width="75%"/>
+<img src="./readmeimages/misc/kanbanboard.png" alt="kanban" width="30%"/>
 
 #### Database Diagram
-<img src="./readmeimages/misc/datadiagram.png" alt="database" width="75%"/>
+<img src="./readmeimages/misc/datadiagram.png" alt="database" width="30%"/>
 
 #### Site Map
-<img src="./readmeimages/misc/sitemap.png" alt="sitemap" width="75%"/>
+<img src="./readmeimages/misc/sitemap.png" alt="sitemap" width="30%"/>
 
 ### Lofi Wireframes
 #### Desktop Signed In
-<img src="./readmeimages/loggedindesk/homepage.png" alt="wireframe" width="75%"/>
-<img src="./readmeimages/loggedindesk/homepage2.png" alt="wireframe" width="75%"/>
-<img src="./readmeimages/loggedindesk/addrecipe.png" alt="wireframe" width="75%"/>
-<img src="./readmeimages/loggedindesk/join.png" alt="wireframe" width="75%"/>
-<img src="./readmeimages/loggedindesk/loggedindetail.png" alt="wireframe" width="75%"/>
-<img src="./readmeimages/loggedindesk/logout.png" alt="wireframe" width="75%"/>
-<img src="./readmeimages/loggedindesk/myrecipe.png" alt="wireframe" width="75%"/>
+<img src="./readmeimages/loggedindesk/homepage.png" alt="wireframe" width="30%"/>
+<img src="./readmeimages/loggedindesk/homepage2.png" alt="wireframe" width="30%"/>
+<img src="./readmeimages/loggedindesk/addrecipe.png" alt="wireframe" width="30%"/>
+<img src="./readmeimages/loggedindesk/join.png" alt="wireframe" width="30%"/>
+<img src="./readmeimages/loggedindesk/loggedindetail.png" alt="wireframe" width="30%"/>
+<img src="./readmeimages/loggedindesk/logout.png" alt="wireframe" width="30%"/>
+<img src="./readmeimages/loggedindesk/myrecipe.png" alt="wireframe" width="30%"/>
 
 #### Desktop Signed Out
-<img src="./readmeimages/loggedoutdesk/homepage.png" alt="wireframe" width="75%"/>
-<img src="./readmeimages/loggedoutdesk/homepage2.png" alt="wireframe" width="75%"/>
-<img src="./readmeimages/loggedoutdesk/join.png" alt="wireframe" width="75%"/>
-<img src="./readmeimages/loggedoutdesk/loggedoutdetail.png" alt="wireframe" width="75%"/>
-<img src="./readmeimages/loggedoutdesk/login.png" alt="wireframe" width="75%"/>
-<img src="./readmeimages/loggedoutdesk/register.png" alt="wireframe" width="75%"/>
+<img src="./readmeimages/loggedoutdesk/homepage.png" alt="wireframe" width="30%"/>
+<img src="./readmeimages/loggedoutdesk/homepage2.png" alt="wireframe" width="30%"/>
+<img src="./readmeimages/loggedoutdesk/join.png" alt="wireframe" width="30%"/>
+<img src="./readmeimages/loggedoutdesk/loggedoutdetail.png" alt="wireframe" width="30%"/>
+<img src="./readmeimages/loggedoutdesk/login.png" alt="wireframe" width="30%"/>
+<img src="./readmeimages/loggedoutdesk/register.png" alt="wireframe" width="30%"/>
 
 #### Mobile Signed In
-<img src="./readmeimages/signedinmob/homepage.png" alt="wireframe" width="20%"/><img src="./readmeimages/signedinmob/homepage2.png" alt="wireframe" width="20%"/>
-<img src="./readmeimages/signedinmob/addrecipe.png" alt="wireframe" width="20%"/><img src="./readmeimages/signedinmob/join.png" alt="wireframe" width="20%"/>
-<img src="./readmeimages/signedinmob/logout.png" alt="wireframe" width="20%"/><img src="./readmeimages/signedinmob/myrecipe.png" alt="wireframe" width="20%"/>
+<img src="./readmeimages/signedinmob/homepage.png" alt="wireframe" width=30%"/><img src="./readmeimages/signedinmob/homepage2.png" alt="wireframe" width=30%"/>
+<img src="./readmeimages/signedinmob/addrecipe.png" alt="wireframe" width=30%"/><img src="./readmeimages/signedinmob/join.png" alt="wireframe" width=30%"/>
+<img src="./readmeimages/signedinmob/logout.png" alt="wireframe" width=30%"/><img src="./readmeimages/signedinmob/myrecipe.png" alt="wireframe" width=30%"/>
