@@ -3,6 +3,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
+
 <div class="text-center">
     <div class="">
     <h3 class="">{{ recipe.title }}, a creation by {{ recipe.author }}</h3>
@@ -29,7 +30,7 @@
   {% endfor %}
 </div>
 
-<div class="container-fluid g-0">
+<div class="container g-0">
     <div class="card">
         {% if user.is_authenticated %}
         <h3>{{ user.username }}, Would you like to comment?</h3>
