@@ -18,10 +18,10 @@ class Recipelist(generic.ListView):
 
 def recipe_detail(request, slug):
     """
-    
+    Recipe details page
     """
 
-    queryset = Recipe.objects.filter(status=1)
+    queryset = Recipe.objects.all()
     recipe = get_object_or_404(queryset, slug=slug)
     comments = Recipe_comment.objects.filter(recipe=recipe)
     if request.method == "POST":
@@ -31,7 +31,7 @@ def recipe_detail(request, slug):
             comment.author = request.user
             comment.recipe = recipe
             comment.save()
-            return HttpResponseRedirect(reverse('recipe_details', args=[slug]))
+            return HttpResponseRedirect(reverse('home'))
             messages.add_message(request, messages.SUCCESS,'Thanks your comment is under approval.')
     comment_form = CommentForm()
     return render(request,"recipes/recipe_detail.html",{"recipe": recipe, "comments":comments, "comment_form": CommentForm,})
@@ -82,3 +82,20 @@ def delete_recipe(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
     recipe.delete()
     return redirect(reverse('home'))
+
+class MyRecipes(View):
+    """ view for user recipes page"""
+
+    def get(self, request):
+        """your_recipes view, get method"""
+        if request.user.is_authenticated:
+            recipes = Recipe.objects.filter(status=0, author=request.user)
+        
+        context = {
+            'recipes': recipes,
+        }
+
+        return render(request, 'recipes/my_recipes.html', context)
+
+
+
