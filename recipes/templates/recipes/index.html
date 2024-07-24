@@ -6,9 +6,9 @@
     <div class="row">
         {% for recipe in recipe_list %}
         <div class="col-6">
-            <div class="">
-                <div class="">
-                    <div class="">
+            <div>
+                <div>
+                    <div>
                         {% if "placeholder" in recipe.image.url %}
                         <a href="{% url 'recipe_detail' recipe.slug %}"><img class="img-fluid"
                                 src="{% static 'images/food.png' %}" alt="placeholder image"></a>
