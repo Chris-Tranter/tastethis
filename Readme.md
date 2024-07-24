@@ -4,7 +4,7 @@
 ![responsive example](./readmeimages/misc/responsive.png)
 
 #### Link to Website Below
-![live site](heroku.vo)
+![live site](https://tastetease-5c0e63de4c45.herokuapp.com/)
 
 - Taste Teez is a site for sharing recipes. Similair to an online cookbook designed so users can have there own recipes and see what other users have added.
 
