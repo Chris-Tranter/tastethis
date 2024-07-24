@@ -82,15 +82,15 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         {% endfor %}
     </div>
-
+    <hr>
     <div>
         {% if user.is_authenticated %}
-        <p class="text-center userp">{{ user }} is signed in.</p>
+        <h4 class="userp">{{ user }} is signed in.</h4>
         {% else %}
-        <p class="text-center userp">You are not logged in</p>
+        <h4 class="userp">You are not logged in</h4>
         {% endif %}
     </div>
-
+    <hr>
     {% block content %}
 
     {% endblock content %}

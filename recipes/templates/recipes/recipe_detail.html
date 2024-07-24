@@ -4,8 +4,8 @@
 {% load crispy_forms_tags %}
 
 <div class="text-center">
-    <div class="">
-    <h3 class="">{{ recipe.title }}, a creation by {{ recipe.author }}</h3>
+    <div>
+    <h3 class="recipe-title">{{ recipe.title }}, a creation by {{ recipe.author }}</h3>
 <div class="d-block">
     {% if "placeholder" in recipe.image.url %}
     <a href="{% url 'recipe_detail' recipe.slug %}"><img class="img-fluid" src="{% static 'images/food.png' %}"
@@ -20,14 +20,15 @@
   <p><i class="fas fa-clock"></i> Prepares in {{ recipe.prep_time}}mins. <i class="fas fa-clock"></i> Cooks in {{ recipe.cook_time}}mins.</p>
   <p><i class="far fa-snowflake"></i> Freezable? {{ recipe.freezable }}</p>
   <p><i class="fas fa-pizza-slice"></i> Serves: {{ recipe.servings }}</p>
+  <br>
 </div>
 
 <div>
-    <h3>ingredients:</h3><br>{{ recipe.ingredients | safe}}
+    <h3>Ingredients:</h3><br>{{ recipe.ingredients | safe}}
 </div>
 
 <div>
-    <h3>cooking steps:</h3><br>{{ recipe.cooking_steps | safe}}
+    <h3>Cooking Steps:</h3><br>{{ recipe.cooking_steps | safe}}
 </div>
 
 {{ recipe_comment.comment }}
@@ -44,9 +45,9 @@
 </div>
 
 <div class="container g-0">
-    <div class="card">
+    <div class="row text-start fst-italic">
         {% if user.is_authenticated %}
-        <h3>{{ user.username }}, Would you like to comment?</h3>
+        <h3>{{ user.username }}, want to comment?</h3>
         <form id="commentForm" method="post">
         {{ comment_form | crispy }}
         {% csrf_token %}

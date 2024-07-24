@@ -28,12 +28,8 @@ li {
     margin-right: 2vw;
 }
 
-.userp {
-    color: #629460;
-}
-
 .background2 {
-    background-color: #f1f7f8;
+    background-color: #12242b;
 }
 
 .next-page {
@@ -44,4 +40,36 @@ li {
 .prev-page {
     margin-right: 10vw;
     border: solid #12242b;
+}
+
+p,h1,h2,h4,h5 {
+    color: #629460;
+}
+
+.recipe-title {
+    color: #629460;
+}
+
+h3 {
+    color: #f1f7f8;
+}
+
+hr {
+  color: #629460;  
+}
+
+.fa-clock {
+    color: #f1f7f8;
+}
+
+.fa-snowflake {
+    color: #f1f7f8;
+}
+
+.fa-pizza-slice {
+    color: #f1f7f8;
+}
+
+.form-label {
+    color: #629460;
 }
