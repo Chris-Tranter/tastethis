@@ -59,9 +59,6 @@ uploading recipes and exchanging comments. users will have full control over wha
 <img src="./readmeimages/loggedoutdesk/register.png" alt="wireframe" width="75%"/>
 
 #### Mobile Signed In
-<img src="./readmeimages/signedinmob/homepage.png" alt="wireframe" width="20%"/>
-<img src="./readmeimages/signedinmob/homepage2.png" alt="wireframe" width="20%"/>
-<img src="./readmeimages/signedinmob/addrecipe.png" alt="wireframe" width="20%"/>
-<img src="./readmeimages/signedinmob/join.png" alt="wireframe" width="20%"/>
-<img src="./readmeimages/signedinmob/logout.png" alt="wireframe" width="20%"/>
-<img src="./readmeimages/signedinmob/myrecipe.png" alt="wireframe" width="20%"/>
+<img src="./readmeimages/signedinmob/homepage.png" alt="wireframe" width="20%"/><img src="./readmeimages/signedinmob/homepage2.png" alt="wireframe" width="20%"/>
+<img src="./readmeimages/signedinmob/addrecipe.png" alt="wireframe" width="20%"/><img src="./readmeimages/signedinmob/join.png" alt="wireframe" width="20%"/>
+<img src="./readmeimages/signedinmob/logout.png" alt="wireframe" width="20%"/><img src="./readmeimages/signedinmob/myrecipe.png" alt="wireframe" width="20%"/>
