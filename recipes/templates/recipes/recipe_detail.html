@@ -8,7 +8,14 @@
     <div class="">
     <h3 class="">{{ recipe.title }}, a creation by {{ recipe.author }}</h3>
 <div class="d-block">
-    <img src="{{ recipe.image.url }}" class="img-fluid" alt="{{ recipe.title }}">
+    {% if "placeholder" in recipe.image.url %}
+    <a href="{% url 'recipe_detail' recipe.slug %}"><img class="img-fluid" src="{% static 'images/food.png' %}"
+      alt="placeholder image"></a>
+    {% else %}
+    <a href="{% url 'recipe_detail' recipe.slug %}"><img class="img-fluid" src=" {{ recipe.image.url }}"
+      alt="{{ recipe.title }}"></a>
+    {% endif %}
+
 <br><br>
 <div>
     <h3>ingredients:</h3><br>{{ recipe.ingredients | safe}}
