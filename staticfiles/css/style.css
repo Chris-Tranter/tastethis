@@ -10,36 +10,26 @@ footer {
     margin-top: 4vh;
 }
 
-h2 {
-    font-family: 'Michroma';
-} 
+
+.font2 {
+    font-family: 'Philosopher';
+}
+
+.btn {
+    background-color: #629460;
+}
 
 a {
     text-decoration: none;
     color: #629460;
 }
 
-.listed {
-    text-align: center;
-    color: #629460;
-}
+h2 {
+    font-family: 'Michroma';
+} 
 
-li {
-    margin-right: 2vw;
-}
-
-.background2 {
-    background-color: #12242b;
-}
-
-.next-page {
-    margin-left: 10vw;
-    border: solid #12242b;
-}
-
-.prev-page {
-    margin-right: 10vw;
-    border: solid #12242b;
+h3 {
+    color: #f1f7f8;
 }
 
 p,h1,h2,h4,h5 {
@@ -50,12 +40,20 @@ p,h1,h2,h4,h5 {
     color: #629460;
 }
 
-h3 {
-    color: #f1f7f8;
+.listed {
+    text-align: center;
+}
+
+li {
+    margin-right: 2vw;
+}
+
+.background2 {
+    background-color: #12242b;
 }
 
 hr {
-  color: #629460;  
+    color: #629460;  
 }
 
 .fa-clock {
