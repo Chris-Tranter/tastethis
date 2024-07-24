@@ -4,7 +4,7 @@
 ![responsive example](./readmeimages/misc/responsive.png)
 
 #### Link to Website Below
-![live site](https://tastetease-5c0e63de4c45.herokuapp.com/)
+https://tastetease-5c0e63de4c45.herokuapp.com/
 
 - Taste Teez is a site for sharing recipes. Similair to an online cookbook designed so users can have there own recipes and see what other users have added.
 
@@ -38,7 +38,7 @@ uploading recipes and exchanging comments. users will have full control over wha
 <img src="./readmeimages/misc/datadiagram.png" alt="database" width="75%"/>
 
 #### Site Map
-<img src="./readmeimages/misc/wireframe.png" alt="sitemap" width="75%"/>
+<img src="./readmeimages/misc/sitemap.png" alt="sitemap" width="75%"/>
 
 ### Lofi Wireframes
 #### Desktop Signed In
@@ -59,9 +59,9 @@ uploading recipes and exchanging comments. users will have full control over wha
 <img src="./readmeimages/loggedoutdesk/register.png" alt="wireframe" width="75%"/>
 
 #### Mobile Signed In
-<img src="./readmeimages/signedinmob/homepage.png" alt="wireframe" height="50%"/>
-<img src="./readmeimages/signedinmob/homepage2.png" alt="wireframe" height="50%"/>
-<img src="./readmeimages/signedinmob/addrecipe.png" alt="wireframe" height="50%"/>
-<img src="./readmeimages/signedinmob/join.png" alt="wireframe" height="50%"/>
-<img src="./readmeimages/signedinmob/logout.png" alt="wireframe" height="50%"/>
-<img src="./readmeimages/signedinmob/myrecipe.png" alt="wireframe" height="50%"/>
+<img src="./readmeimages/signedinmob/homepage.png" alt="wireframe" width="20%"/>
+<img src="./readmeimages/signedinmob/homepage2.png" alt="wireframe" width="20%"/>
+<img src="./readmeimages/signedinmob/addrecipe.png" alt="wireframe" width="20%"/>
+<img src="./readmeimages/signedinmob/join.png" alt="wireframe" width="20%"/>
+<img src="./readmeimages/signedinmob/logout.png" alt="wireframe" width="20%"/>
+<img src="./readmeimages/signedinmob/myrecipe.png" alt="wireframe" width="20%"/>
