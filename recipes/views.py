@@ -3,12 +3,10 @@ from django.http import HttpResponseRedirect
 from django.views import generic, View
 from django.contrib import messages
 from django.utils.text import slugify
-from .forms import CommentForm, RecipeForm
-from .models import Recipe, Recipe_comment
-from django.views.generic import UpdateView
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.views.generic import (TemplateView, CreateView, ListView, DeleteView, UpdateView)
 from django.db.models import Q
+from .models import Recipe, Recipe_comment
 from .forms import RecipeForm, CommentForm
 
 class Recipelist(generic.ListView):

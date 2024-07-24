@@ -6,12 +6,13 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "not-posted"), (1, "Posted"))
 
+
 class Recipe(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="+")
     ingredients = models.TextField(max_length=3200, unique=True)
-    image = CloudinaryField('image', default='placeholder')
+    image = CloudinaryField("image", default="placeholder")
     cooking_steps = models.TextField(max_length=2400, unique=True)
     freezable = models.BooleanField(default=False)
     prep_time = models.PositiveIntegerField(default=0)
@@ -20,16 +21,18 @@ class Recipe(models.Model):
     created = models.DateField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     updated = models.DateField(auto_now=True)
-    
+
     def get_absolute_url(self):
         """Sets absolute URL"""
-        return reverse('recipe_detail', args=[self.slug])
+        return reverse("recipe_detail", args=[self.slug])
+
 
 class Meta:
-        ordering = ["-created"]
+    ordering = ["-created"]
+
 
 def __str__(self):
-        return f"{self.title} especially crafted by {self.author},"
+    return f"{self.title} especially crafted by {self.author},"
 
 
 class Recipe_comment(models.Model):
@@ -39,6 +42,6 @@ class Recipe_comment(models.Model):
     approved = models.BooleanField(default=False)
     created = models.DateField(auto_now_add=True)
 
-class Meta:
-        ordering = ["-recipe"]
 
+class Meta:
+    ordering = ["-recipe"]

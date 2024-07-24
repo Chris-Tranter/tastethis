@@ -4,6 +4,7 @@ from django.contrib import messages
 from .models import Join
 from .forms import JoinForm
 
+
 def join_me(request):
     """
     Renders the joinpage
@@ -12,7 +13,12 @@ def join_me(request):
         join_form = JoinForm(data=request.POST)
         if join_form.is_valid():
             join_form.save()
-            messages.add_message(request, messages.SUCCESS, "Thanks for requesting to join the team, check your emails soon.")
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                "Thanks for requesting to join the team, check your emails soon.",
+            )
+
     join = Join.objects.all()
     join_form = JoinForm()
 

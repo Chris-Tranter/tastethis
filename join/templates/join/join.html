@@ -10,11 +10,11 @@
       <div class="text-center">
         <h2>Join The Team</h2>
       </div>
-      
+
       <hr><br>
-      
+
       <form method="post">
-        <div class= "justify-content-center">
+        <div class="justify-content-center">
           {{ join_form | crispy }}
           {% csrf_token %}
           <button class="btn" type="submit">Submit</button>
@@ -23,7 +23,5 @@
     </div>
   </div>
 </div>
-
-
 
 {% endblock %}

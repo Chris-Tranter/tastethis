@@ -5,14 +5,25 @@ from django import forms
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Recipe_comment
-        fields = ('comment',)
+        fields = ("comment",)
 
 
 class RecipeForm(forms.ModelForm):
-    """ Recipe Form """
+    """Recipe Form"""
+
     class Meta:
-        """ fields for recipe form"""
+        """fields for recipe form"""
+
         model = Recipe
-        fields = ('title', 'ingredients',
-                  'cooking_steps', 'freezable','cooking_steps', 'prep_time',
-                  'cook_time', 'servings','cook_time', 'status', )
+        fields = (
+            "title",
+            "ingredients",
+            "cooking_steps",
+            "freezable",
+            "cooking_steps",
+            "prep_time",
+            "cook_time",
+            "servings",
+            "cook_time",
+            "status",
+        )
