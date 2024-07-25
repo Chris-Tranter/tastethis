@@ -10,7 +10,6 @@ footer {
     margin-top: 4vh;
 }
 
-
 .font2 {
     font-family: 'Philosopher';
 }
@@ -21,7 +20,7 @@ footer {
 
 a {
     text-decoration: none;
-    color: #629460;
+    color: #f1f7f8;
 }
 
 h2 {
@@ -79,4 +78,8 @@ hr {
 
 .form-label {
     color: #629460;
+}
+
+.pagebutton {
+    background-color: #629460;
 }

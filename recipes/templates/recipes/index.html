@@ -38,11 +38,11 @@
         <ul class="pagination justify-content-center">
 
             {% if page_obj.has_previous %}
-            <li class="prev-page page-link"><a href="?page={{ page_obj.previous_page_number }}">Prev Page</a></li>
+            <li class="pagebutton page-link"><a href="?page={{ page_obj.previous_page_number }}">Prev Page</a></li>
             {% endif %}
 
             {% if page_obj.has_next %}
-            <li class="next-page page-link"><a href="?page={{ page_obj.next_page_number }}">Next Page</a></li>
+            <li class="pagebutton page-link"><a href="?page={{ page_obj.next_page_number }}">Next Page</a></li>
             {% endif %}
 
         </ul>
