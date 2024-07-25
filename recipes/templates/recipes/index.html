@@ -11,10 +11,10 @@
                     <div>
                         {% if "placeholder" in recipe.image.url %}
                         <a href="{% url 'recipe_detail' recipe.slug %}"><img class="img-fluid"
-                                src="{% static 'images/food.png' %}" alt="placeholder image"></a>
+                                src="{% static 'images/food.png' %}" alt="placeholder image" width="100vw" height="100vh"></a>
                         {% else %}
                         <a href="{% url 'recipe_detail' recipe.slug %}"><img class="img-fluid"
-                                src=" {{ recipe.image.url }}" alt="{{ recipe.title }}"></a>
+                                src=" {{ recipe.image.url }}" alt="{{ recipe.title }}" width="100vw" height="100vh"></a>
                         {% endif %}
                         <div>
                             <p class="h3">{{ recipe.author }} made: {{ recipe.title }}</p>

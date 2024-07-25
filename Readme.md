@@ -105,28 +105,48 @@ uploading recipes and exchanging comments. users will have full control over wha
 
 ### Testing
 #### HTML W3C Validator
+- homepage
+
 <img src="./readmeimages/validation/homevalidate.png" alt="validatecheck" width="30%"/>
+
+- my recipe page
+
 <img src="./readmeimages/validation/myrecipevalidate.png" alt="validatecheck" width="30%"/>
+
+- add recipe page
+
 <img src="./readmeimages/validation/addrecipevalidate.png" alt="validatecheck" width="30%"/>
+
+- join us 
+
 <img src="./readmeimages/validation/joinusvalidate.png" alt="validatecheck" width="30%"/>
+
+- log in page
+
 <img src="./readmeimages/validation/loginvalidate.png" alt="validatecheck" width="30%"/>
+
+- recipe page
+
 <img src="./readmeimages/validation/myrecipevalidate.png" alt="validatecheck" width="30%"/>
+
+- sign up page
+
 <img src="./readmeimages/validation/signupvalidate.png" alt="validatecheck" width="30%"/>
+
 
 #### CSS W3C Validator
 <img src="./readmeimages/validation/cssvalidate.png" alt="validatecheck" width="30%"/>
 
 #### Python Validator
 <img src="./readmeimages/validation/adminvalidate.png" alt="validatecheck" width="30%"/>
-<img src="./readmeimages/validation/formsvalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/formssvalidate.png" alt="validatecheck" width="30%"/>
 <img src="./readmeimages/validation/modelsvalidate.png" alt="validatecheck" width="30%"/>
-<img src="./readmeimages/validation/urlvalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/urlsvalidate.png" alt="validatecheck" width="30%"/>
 <img src="./readmeimages/validation/viewsvalidate.png" alt="validatecheck" width="30%"/>
 
 #### Encountered Issues
 - images that are uploaded are all different sizes, this gives the website an irregular look which was frustrating, i ended up resizing them in paint
 but it would be good if i could force an image size on upload
-- in mobile view the recipes arent vertically in a single column
 
 #### Deployment
 - Heroku was used to deploy my website. this lets me manage my app in the cloud aswell as allows me to use microservices for site users
