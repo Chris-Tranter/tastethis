@@ -27,7 +27,7 @@
     <h3 class="mb-5">Ingredients:</h3><br>{{ recipe.ingredients | safe}}
 </div>
 
-<div>
+<div class="mb-5">
     <h3 class="mb-5">Cooking Steps:</h3><br>{{ recipe.cooking_steps | safe}}
 </div>
 
@@ -38,7 +38,7 @@
   {% if not comment.approved and comment.author == user %}
   {% elif not comment.approved %}
   {% endif %}
-<div class="text-end fs-3 font2 mb-5 recipe-comment">
+<div class="text-centre fs-3 font2 mb-5 recipe-comment">
 {{ comment.author }} commented: {{ comment.comment }}
 </div>
   {% endfor %}

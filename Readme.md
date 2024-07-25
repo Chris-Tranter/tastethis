@@ -109,6 +109,13 @@ W3C Markup Validator
 W3C CSS Validator 
 
 #### Testing
+<img src="./readmeimages/validation/homevalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/myrecipevalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/addrecipevalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/joinusvalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/loginvalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/myrecipevalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/signupvalidate.png" alt="validatecheck" width="30%"/>
 
 #### Encountered Issues
 - images that are uploaded are all different sizes, this gives the website an irregular look which was frustrating, i ended up resizing them in paint
