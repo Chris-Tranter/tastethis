@@ -1,7 +1,7 @@
 ### TASTE TEEZ
 
 #### Responsive
-![responsive example](./readmeimages/misc/responsive.png)
+![responsive example](./readmeimages/misc/respons.png)
 
 #### Link to Website Below
 https://tastetease-5c0e63de4c45.herokuapp.com/
@@ -103,11 +103,6 @@ uploading recipes and exchanging comments. users will have full control over wha
 - GitPod – An IDE which was used to code everything and display different file types to work with
 - Django Summernote - a package to enhance UX when entering text into text fields 
 
-
-W3C Markup Validator 
-
-W3C CSS Validator 
-
 ### Testing
 #### HTML W3C Validator
 <img src="./readmeimages/validation/homevalidate.png" alt="validatecheck" width="30%"/>
@@ -119,7 +114,14 @@ W3C CSS Validator
 <img src="./readmeimages/validation/signupvalidate.png" alt="validatecheck" width="30%"/>
 
 #### CSS W3C Validator
+<img src="./readmeimages/validation/cssvalidate.png" alt="validatecheck" width="30%"/>
 
+#### Python Validator
+<img src="./readmeimages/validation/adminvalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/formsvalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/modelsvalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/urlvalidate.png" alt="validatecheck" width="30%"/>
+<img src="./readmeimages/validation/viewsvalidate.png" alt="validatecheck" width="30%"/>
 
 #### Encountered Issues
 - images that are uploaded are all different sizes, this gives the website an irregular look which was frustrating, i ended up resizing them in paint
@@ -130,4 +132,4 @@ but it would be good if i could force an image size on upload
 - Heroku was used to deploy my website. this lets me manage my app in the cloud aswell as allows me to use microservices for site users
 
 #### Credits
-- 
+- playpennies.com for the potato image
