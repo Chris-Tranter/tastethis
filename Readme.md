@@ -12,9 +12,10 @@ https://tastetease-5c0e63de4c45.herokuapp.com/
 - I chose  two different fonts: 'Michroma' for the page links and 'Philosopher' for the recipe headings
 
 #### Colour Scheme
+- these colours represent a nice restaurant, it makes the food image pop and appeal to the user
+
 ![F1F7F8 12242B 688E26](./readmeimages/misc/coolors.png)
 
-- I decided on a few contrasts i feel represented a nice restaurant, the idea was to make the food seem even more appealing to the user
 - #` F1F7F8 This Anti-flash shade was used for the navbar, footer text, and a subheading
 - #` 12242B This Gunmetal shade was used as my main abckground colour
 - #` 688E26 This Avocado shade was used for all other text mainly paragraph text
@@ -77,43 +78,46 @@ uploading recipes and exchanging comments. users will have full control over wha
 <img src="./readmeimages/signedinmob/myrecipe.png" alt="wireframe" width="30%"/>
 
 #### Technologies Used
-- Python
-- Html
-- Css
+- Python3
+- HTML5
+- CSS3
 
 #### Libraries and Other Packages Used
+- CI Database - Allowed me to host a database in a postgres link
+- Git - an open source version control system which tracks any changes to my code used for development
 - GitHub - Where my main repository is hosted 
-- GitPod – An IDE which was used to code everything and display different file types to work with
-- Heroku - A cloud based hosting service which I used to deploy my website with, It gives you detailed build logs on manual deployment
-- Django - an MVC Framework which I built the website with 
-
-- Gunicorn - A server for the WSGI application  
-
-- Django Database - allowed me to connect to DATABASE_URL environment variable which is linked to my relational database in the Django Recipe app.
-
+- Google Fonts - An online Library used for collecting fonts i used 'Michroma' and 'Philosopher'
+- Django Database - allowed me to connect to DATABASE_URL environment variable which is linked to my relational database in the Django Recipe app
 - Bootstrap - A tool used for making the website responsive and appealing
-
+- Beautify - an extension for the Gitpod IDE. It formatted my code for a clean human readable look
+- Font Awesome - An online library used for a clock, pizza slice, and snowflake icon
+- Am I Responsive - a visual responsive idea of how my website looks on different screens
+- Heroku - A cloud based hosting service which I used to deploy my website with, It gives you detailed build logs on manual deployment
+- Paint - was used for image resizing and editing
+- Unsplash/Pexels - were used for downloading all the images which are royalty free
+- Django - an MVC Framework which I built the website with 
+- Gunicorn - A server for the WSGI application  
+- Balsamiq - Wireframe creation tool
+- Coolors - was used to decide on a color scheme
 - Cloudinary - An online Hosting provider to store dynamic images, this doesnt require a local image folder to store my images
-
+- GitPod – An IDE which was used to code everything and display different file types to work with
 - Django Summernote - a package to enhance UX when entering text into text fields 
 
-- Google Fonts - An online Library used for collecting fonts i used 'Michroma' and 'Philosopher'
 
-- Font Awesome - An online library used for a clock, pizza slice, and snowflake icon
+W3C Markup Validator 
 
-- Balsamiq - Wireframe creation tool
+W3C CSS Validator 
 
-- Am I Responsive - a visual responsive idea of how my website looks on different screens
+#### Testing
 
-- Paint - was used for image resizing and editing
+#### Encountered Issues
+- images that are uploaded are all different sizes, this gives the website an irregular look which was frustrating, i ended up resizing them in paint
+but it would be good if i could force an image size on upload
+- in mobile view the recipes arent vertically aligned ina single column
+- My comments were showing but randomly stopped so i decieded to leave them out
 
-- Unsplash/Pexels - were used for downloading all the images which are royalty free
+#### Deployment
+- Heroku was used to deploy my website. this lets me manage my app in the cloud aswell as allows me to use microservices for site users
 
-W3C Markup Validator - was used to validate HTML
-
-W3C CSS Validator - was used to validate CSS
-
-
-
-- Beautify - an extension for the Gitpod IDE. It formatted my code for a clean human readable look
-- Coolors - was used to decide on a color scheme
+#### Credits
+- 
