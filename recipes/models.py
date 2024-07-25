@@ -10,7 +10,7 @@ STATUS = ((0, "not-posted"), (1, "Posted"))
 class Recipe(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="+")
+    author = models.ForeignKey(User, on_delete=models.CASCADE,)
     ingredients = models.TextField(max_length=3200, unique=True)
     image = CloudinaryField("image", default="placeholder")
     cooking_steps = models.TextField(max_length=2400, unique=True)
@@ -36,8 +36,8 @@ def __str__(self):
 
 
 class Recipe_comment(models.Model):
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="++")
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="+++")
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE,)
+    author = models.ForeignKey(User, on_delete=models.CASCADE,)
     comment = models.TextField()
     approved = models.BooleanField(default=False)
     created = models.DateField(auto_now_add=True)

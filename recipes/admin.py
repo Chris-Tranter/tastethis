@@ -27,3 +27,21 @@ class RecipeAdmin(SummernoteModelAdmin):
 
 
 admin.site.register(Recipe_comment)
+class Recipe_comment(SummernoteModelAdmin):
+
+    list_display = (
+    "recipe",
+    "author",
+    "comment",
+    "created",
+)
+    search_fields = ["title"]
+    list_filter = (
+        "recipe",
+        "author",
+        "created",
+    )
+
+    summernote_fields = (
+        "comment",
+    )
