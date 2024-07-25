@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 class Join(models.Model):
+    """ Join Model """
     title = models.CharField(max_length=200)
     image = CloudinaryField('image', default='placeholder')
     content = models.TextField()
@@ -14,6 +15,7 @@ class Join(models.Model):
 
 
 class JoinRequest(models.Model):
+    """ a user request form """
     name = models.CharField(max_length=200)
     email = models.EmailField()
     message = models.TextField()

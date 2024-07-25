@@ -8,6 +8,7 @@ STATUS = ((0, "not-posted"), (1, "Posted"))
 
 
 class Recipe(models.Model):
+    """ Recipe Model """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE,)
@@ -36,6 +37,7 @@ def __str__(self):
 
 
 class Recipe_comment(models.Model):
+    """ Recipe Comment Model """
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE,)
     author = models.ForeignKey(User, on_delete=models.CASCADE,)
     comment = models.TextField()

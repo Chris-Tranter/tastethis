@@ -16,7 +16,7 @@ class Recipelist(generic.ListView):
 
 def recipe_detail(request, slug):
     """
-    Recipe details page
+    Recipe detail page
     """
 
     queryset = Recipe.objects.all()
@@ -37,12 +37,12 @@ def recipe_detail(request, slug):
 class AddRecipe(View):
     """ add recipe"""
     def get(self, request):
-        """What happens for a GET request"""
+        """a GET request"""
         return render(
             request, "recipes/add_recipe.html", {"recipe_form": RecipeForm()})
 
     def post(self, request):
-        """What happens for a POST request"""
+        """a POST request"""
         recipe_form = RecipeForm(request.POST, request.FILES)
 
         if recipe_form.is_valid():
@@ -85,7 +85,7 @@ class MyRecipes(View):
     """ view for user recipes page"""
 
     def get(self, request):
-        """your_recipes view, get method"""
+        """my recipes view, get method"""
         if request.user.is_authenticated:
             recipes = Recipe.objects.filter(status=0, author=request.user)
         

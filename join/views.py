@@ -6,9 +6,7 @@ from .forms import JoinForm
 
 
 def join_me(request):
-    """
-    Renders the joinpage
-    """
+    """ Renders the join page """
     if request.method == "POST":
         join_form = JoinForm(data=request.POST)
         if join_form.is_valid():

@@ -3,16 +3,19 @@ from django import forms
 
 
 class CommentForm(forms.ModelForm):
+    """ Recipe Comment Form """
     class Meta:
+        """ fields for Recipe Comment form """
+        
         model = Recipe_comment
         fields = ("comment",)
 
 
 class RecipeForm(forms.ModelForm):
-    """Recipe Form"""
+    """ Recipe Form """
 
     class Meta:
-        """fields for recipe form"""
+        """ fields for recipe form """
 
         model = Recipe
         fields = (
