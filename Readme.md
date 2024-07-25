@@ -8,9 +8,16 @@ https://tastetease-5c0e63de4c45.herokuapp.com/
 
 - Taste Teez is a site for sharing recipes. Similair to an online cookbook designed so users can have there own recipes and see what other users have added.
 
+#### Fonts Used
+- I chose  two different fonts: 'Michroma' for the page links and 'Philosopher' for the recipe headings
+
 #### Colour Scheme
 ![F1F7F8 12242B 688E26](./readmeimages/misc/coolors.png)
-I decided on a few contrasts i thought represented a nice restaurant, the idea was to make the food seem even more appealing to the user
+
+- I decided on a few contrasts i feel represented a nice restaurant, the idea was to make the food seem even more appealing to the user
+- #` F1F7F8 This Anti-flash shade was used for the navbar, footer text, and a subheading
+- #` 12242B This Gunmetal shade was used as my main abckground colour
+- #` 688E26 This Avocado shade was used for all other text mainly paragraph text
 
 #### Audience and purposes
 - Audience
@@ -29,10 +36,13 @@ uploading recipes and exchanging comments. users will have full control over wha
 
 #### Features Coming Soon
 - a search function to search for recipes
-- a likes counter and favourite a recipe
+- a likes counter
+- a favourite recipes page
 
 #### Kanban Board
 <img src="./readmeimages/misc/kanbanboard.png" alt="kanban" width="30%"/>
+
+#### Database Modele
 
 #### Database Diagram
 <img src="./readmeimages/misc/datadiagram.png" alt="database" width="30%"/>
@@ -65,3 +75,45 @@ uploading recipes and exchanging comments. users will have full control over wha
 <img src="./readmeimages/signedinmob/join.png" alt="wireframe" width="30%"/>
 <img src="./readmeimages/signedinmob/logout.png" alt="wireframe" width="30%"/>
 <img src="./readmeimages/signedinmob/myrecipe.png" alt="wireframe" width="30%"/>
+
+#### Technologies Used
+- Python
+- Html
+- Css
+
+#### Libraries and Other Packages Used
+- GitHub - Where my main repository is hosted 
+- GitPod – An IDE which was used to code everything and display different file types to work with
+- Heroku - A cloud based hosting service which I used to deploy my website with, It gives you detailed build logs on manual deployment
+- Django - an MVC Framework which I built the website with 
+
+- Gunicorn - A server for the WSGI application  
+
+- Django Database - allowed me to connect to DATABASE_URL environment variable which is linked to my relational database in the Django Recipe app.
+
+- Bootstrap - A tool used for making the website responsive and appealing
+
+- Cloudinary - An online Hosting provider to store dynamic images, this doesnt require a local image folder to store my images
+
+- Django Summernote - a package to enhance UX when entering text into text fields 
+
+- Google Fonts - An online Library used for collecting fonts i used 'Michroma' and 'Philosopher'
+
+- Font Awesome - An online library used for a clock, pizza slice, and snowflake icon
+
+- Balsamiq - Wireframe creation tool
+
+- Am I Responsive - a visual responsive idea of how my website looks on different screens
+
+- Paint - was used for image resizing and editing
+
+- Unsplash/Pexels - were used for downloading all the images which are royalty free
+
+W3C Markup Validator - was used to validate HTML
+
+W3C CSS Validator - was used to validate CSS
+
+
+
+- Beautify - an extension for the Gitpod IDE. It formatted my code for a clean human readable look
+- Coolors - was used to decide on a color scheme
