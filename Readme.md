@@ -43,8 +43,6 @@ uploading recipes and exchanging comments. users will have full control over wha
 #### Kanban Board
 <img src="./readmeimages/misc/kanbanboard.png" alt="kanban" width="30%"/>
 
-#### Database Modele
-
 #### Database Diagram
 <img src="./readmeimages/misc/datadiagram.png" alt="database" width="30%"/>
 
@@ -133,7 +131,6 @@ uploading recipes and exchanging comments. users will have full control over wha
 
 <img src="./readmeimages/validation/signupvalidate.png" alt="validatecheck" width="30%"/>
 
-
 #### CSS W3C Validator
 <img src="./readmeimages/validation/cssvalidate.png" alt="validatecheck" width="30%"/>
 
@@ -144,12 +141,15 @@ uploading recipes and exchanging comments. users will have full control over wha
 <img src="./readmeimages/validation/urlsvalidate.png" alt="validatecheck" width="30%"/>
 <img src="./readmeimages/validation/viewsvalidate.png" alt="validatecheck" width="30%"/>
 
+#### Lighthouse Audit
+<img src="./readmeimages/misc/lighthouse.png" alt="lighthouse" width="30%"/>
+
 #### Encountered Issues
-- images that are uploaded are all different sizes, this gives the website an irregular look which was frustrating, i ended up resizing them in paint
-but it would be good if i could force an image size on upload
+- images that are uploaded are all different sizes dependant on what the user chooses, this slows the site down. and looks irregular
 
 #### Deployment
 - Heroku was used to deploy my website. this lets me manage my app in the cloud aswell as allows me to use microservices for site users
 
 #### Credits
 - playpennies.com for the potato image
+- All Staff at code institute for allowing this to happen
