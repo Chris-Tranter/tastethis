@@ -113,8 +113,7 @@ W3C CSS Validator
 #### Encountered Issues
 - images that are uploaded are all different sizes, this gives the website an irregular look which was frustrating, i ended up resizing them in paint
 but it would be good if i could force an image size on upload
-- in mobile view the recipes arent vertically aligned ina single column
-- My comments were showing but randomly stopped so i decieded to leave them out
+- in mobile view the recipes arent vertically in a single column
 
 #### Deployment
 - Heroku was used to deploy my website. this lets me manage my app in the cloud aswell as allows me to use microservices for site users

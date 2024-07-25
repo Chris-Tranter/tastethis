@@ -40,12 +40,21 @@ p,h1,h2,h4,h5 {
     color: #629460;
 }
 
+.recipe-comment {
+    color: #f1f7f8;
+}
+
 .listed {
     text-align: center;
 }
 
 li {
+    color: #629460;
     margin-right: 2vw;
+}
+
+ul {
+    list-style-type:none
 }
 
 .background2 {
